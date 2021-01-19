@@ -24,7 +24,22 @@ addTheSameNumbers(43, [6, 0, 2, 2, 3, 46]);// => null
 
 
 function powers(number) {
+    const array = [];
+    let pow = 0;
+    let number1 = 0;
     if (number <= 0) {
-
+        return array;
+    } else {
+        while (number1 < 200) {
+            number1 = Math.pow(number, pow);
+            pow += 1;
+            if (number1 < 200) {
+                array.push(number1);
+            }
+        }
     }
+    return console.log(array.reverse());
 }
+
+powers(2);
+powers(5);
