@@ -6,11 +6,11 @@ Uważnie czytaj treść zadania – utworzone przez Ciebie strony MUSZĄ wyświe
 w zadaniu.
 
 ### Dzień 2 - DOM
-> Zadanie 1 wykonaj w pliku searchDom.js
+> Zadanie 1 wykonaj w pliku app.js
 
 ### Zadanie 1
 
-Plik HTML do tego zadania to plik **searchDom.html**, a plik js to **searchDom.js**.
+Plik HTML do tego zadania to plik **searchDom.html**, a plik js to **app.js**.
 
 > Nie używaj eventu DOMContentLoaded. Skrypt jest wczytany do pliku html przed końcem body.
 
