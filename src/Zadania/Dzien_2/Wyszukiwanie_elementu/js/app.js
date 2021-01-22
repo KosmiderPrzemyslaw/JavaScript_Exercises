@@ -34,6 +34,9 @@ document.addEventListener("DOMContentLoaded", function () {
     exercise2 = document.querySelector("nav > ul > li:nth-child(5) > a")
     console.log(exercise2);
 
+    exercise2 = document.getElementById("exercise2");
+    console.log(exercise2);
+
     let homeId = document.querySelector("#home");
     console.log(homeId);
 
@@ -49,6 +52,12 @@ document.addEventListener("DOMContentLoaded", function () {
     let liNav = document.querySelectorAll("nav > ul > li");
     console.log("Wszystkie li w tagu nav: " + liNav.length);
 
+    let p = document.querySelectorAll("div > p");
+    console.log("div > p, p.length = " + p.length);
 
-
+    let divs = document.querySelectorAll("article > div");
+    console.log("article > div, divs.length " + divs.length);
+    for(let element of divs){
+        console.log(element);
+    }
 });
