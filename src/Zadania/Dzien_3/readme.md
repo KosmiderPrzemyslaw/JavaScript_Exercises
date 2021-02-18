@@ -10,7 +10,7 @@ w zadaniu.
 
 ### Zadanie 1
 
->Plik HTML do tego zadania to plik **eventy.html**, a plik js to **eventy.js**.
+>Plik HTML do tego zadania to plik **eventy.html**, a plik js to **app.js**.
 
 Na stronie znajduje się sekcja z dwoma elementami ```<article>```.
 W każdym artykule znajdują się elementy `<h2>`, `<a>` oraz `<div>` o klasie `content`, który jest ukryty w **CSS**.

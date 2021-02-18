@@ -9,7 +9,7 @@ w zadaniu.
 
 ### Zadanie 1
 
-> Plik HTML do tego zadania to plik **zadanie1.html**, plik JavaScript to **zadanie1.js** a plik css to **zadanie1.css**
+> Plik HTML do tego zadania to plik **zadanie1.html**, plik JavaScript to **app.js** a plik css to **zadanie1.css**
 
 Celem zadania jest stworzenie spinnera oraz paska postępu, który będzie zmieniał swą szerokość w zależności od wartości inputa.
 
