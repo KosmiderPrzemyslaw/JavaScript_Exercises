@@ -75,4 +75,17 @@ $(function () {
         $(this).css("background-color", "grey");
 
     })
+
+    var start = $('.menu').find('#start');
+    console.log(start);
+
+    var startId = start.attr('id');
+    console.log(startId)
+    start.attr('info', 'priv');
+    console.log(start.attr('info'))
+    start.attr('type', 'text');
+    console.log(start.attr('type'))
+
+
 });
+
