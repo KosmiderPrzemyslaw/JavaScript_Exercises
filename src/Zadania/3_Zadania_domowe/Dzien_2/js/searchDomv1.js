@@ -35,3 +35,29 @@ function getElementText(element) {
 }
 
 console.log(getElementText(pinkColor))
+
+let images = document.querySelectorAll(".images")
+console.log(images)
+
+function getAltElement(images) {
+    let tab = [];
+    for (let i = 0; i < images.length ; i++) {
+        tab.push(images[i].alt);
+    }
+    return tab
+}
+
+console.log(getAltElement(images));
+
+let myLink = document.querySelectorAll(".my-link");
+console.log(myLink)
+
+function getElementHref(myLink) {
+    let tab = [];
+    for (let i = 0; i < myLink.length ; i++) {
+        tab.push(myLink[i].href)
+    }
+    return tab;
+}
+
+console.log(getElementHref(myLink));
