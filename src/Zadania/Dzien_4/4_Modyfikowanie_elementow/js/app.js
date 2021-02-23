@@ -100,8 +100,18 @@ $(function () {
 
     span1Element.insertBefore(divElement);
     span2Element.insertAfter(divElement);
-    divElement.children().after(span4Element);
-    divElement.children().before(span3Element);
+    divElement.append(span4Element);
+    divElement.prepend(span3Element);
 
+    let shoppingList = $('#shoppingList');
 
+    shoppingList.on('click', 'li', function () {
+        alert('li clicked')
+    })
+
+    let liCarrot = $('<li class="product_5">new carrot</li>');
+    let orange = $('<li class="product_6">Orange</li>');
+
+    shoppingList.append(liCarrot);
+    shoppingList.append(orange);
 })

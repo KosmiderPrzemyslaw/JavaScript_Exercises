@@ -1,15 +1,18 @@
 var menu = document.querySelector("#menu");
 console.log(menu);
-getDaraInfo(menu);
-function getDaraInfo(menu) {
+getDataInfo(menu);
+
+function getDataInfo(menu) {
     var table = [];
     let li = menu.querySelectorAll("li");
+    let secL = menu.children;
+    console.log(secL);
 
-    for (let i = 0; i < li.length ; i++) {
-        table[i] = li[i].dataset.info;
+    for (let i = 0; i < li.length; i++) {
+       table.push(li[i].dataset.info)
+        //table[i] = li[i].dataset.info;
         console.log(table[i]);
     }
-
 }
 
 var mainContener = document.getElementById("main-contener");

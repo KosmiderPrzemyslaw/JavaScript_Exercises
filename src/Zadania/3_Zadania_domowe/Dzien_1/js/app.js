@@ -23,8 +23,10 @@ getNumber(5, [33, 54, 2, 1, 4, 100]);
 
 /*
 #### Zadanie 2
-Napisz funkcję ```createIdentityMatrix```, która przyjmuje jako argument liczbę całkowitą ```rows```.
- Niech funkcja **zwraca** tablicę 2-wymiarową. Niech tablica wygląda w następujący sposób:
+Napisz funkcję ```createIdentityMatrix```, która przyjmuje jako argument
+ liczbę całkowitą ```rows```.
+ Niech funkcja **zwraca** tablicę 2-wymiarową. Niech tablica wygląda w
+  następujący sposób:
 
 ```JavaScript
 createIdentityMatrix(4,4);
@@ -33,7 +35,8 @@ createIdentityMatrix(4,4);
 Jest to tak zwana macierz jednostkowa, czyli taka, która ma na przekątnej jedynki.
 Macierz posiada tyle samo rzędów ile kolumn.
 Musisz użyć pętli zagnieżdżonych.
-Pamiętaj o tym, że tablica ta ma zostać zwrócona przez funkcję inaczej zadanie będzie nie zaliczone.
+Pamiętaj o tym, że tablica ta ma zostać zwrócona przez funkcję
+inaczej zadanie będzie nie zaliczone.
  */
 
 function createIdentityMatrix(rows) {
@@ -175,3 +178,23 @@ getFirstWrongElement([1, 8, 32, 128, 1024]);// => null
 ```
  */
 
+function getFirstWrongElement(array) {
+
+    for (let i = 1; i < array.length; i++) {
+        for (let j = 0; j < array.length; j++) {
+            // console.log("array i: " + array[i])
+            // console.log("array j: " + array[j])
+            if (array[i] % array[j] !== 0) {
+                console.log(array[i] % array[j])
+                return array[i]
+            }
+        }
+
+    }
+
+    return null
+}
+
+console.log(getFirstWrongElement([1, 5, 10, 14, 28, 84]))//=> 14
+console.log(getFirstWrongElement([3, 5, 15, 45]));// => 5
+console.log(getFirstWrongElement([1, 8, 32, 128, 1024]));// => null
