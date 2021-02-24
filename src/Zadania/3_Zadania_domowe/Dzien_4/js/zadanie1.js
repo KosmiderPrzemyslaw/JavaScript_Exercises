@@ -6,14 +6,10 @@ $(function () {
     console.log(buttonUp)
 
     let buttonDown = $('.fa-arrow-circle-down');
-    let min = $('#min');
-    let max = $('#max');
-    let step = $('#step')
+    var min = $('#min');
+    var max = $('#max');
+    var step = $('#step');
 
-
-    console.log(buttonDown)
-    console.log(min)
-    console.log(max)
 
     spinnerValue.value = 0;
     $(buttonUp).on('click', function () {
@@ -29,8 +25,10 @@ $(function () {
 
     let saveSettings = $('.saveSettings')
     $(saveSettings).on('click', function () {
-        min.attr('value', min.value);
-        max.attr('value', max.value);
-        step.attr('value', step.value);
+        // min.attr('value', min.input);
+        // max.attr('value', max.input);
+        // step.attr('value', step.input);
+
+        console.log(min.value)
     })
 })
