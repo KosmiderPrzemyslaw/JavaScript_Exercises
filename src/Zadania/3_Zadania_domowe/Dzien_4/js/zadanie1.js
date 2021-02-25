@@ -6,9 +6,12 @@ $(function () {
     console.log(buttonUp)
 
     let buttonDown = $('.fa-arrow-circle-down');
-    var min = $('#min');
+    var min = $('.table-striped').find('input #min');
     var max = $('#max');
     var step = $('#step');
+
+    var inputMin = $(min.value)
+    console.log(inputMin)
 
 
     spinnerValue.value = 0;
